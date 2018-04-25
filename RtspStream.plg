@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RtspStream - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/RtspStream.res" /d "NDEBUG" /d "_AFXDLL" "F:\workcode\platform\trunk\RtspClientLib\RtspStream\RtspStream.rc"" 
+Creating temporary file "C:\Users\liuxuanbin\AppData\Local\Temp\RSPAD7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "include" /I "../groupsock/include" /I "../UsageEnvironment/include" /I "../BasicUsageEnvironment/include" /I "../liveMedia/include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\workcode\platform\trunk\RtspClientLib\RtspStream\geth264videosize.cpp"
+]
+Creating command line "cl.exe @C:\Users\liuxuanbin\AppData\Local\Temp\RSPAD7.tmp" 
+Creating temporary file "C:\Users\liuxuanbin\AppData\Local\Temp\RSPAD8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "include" /I "../groupsock/include" /I "../UsageEnvironment/include" /I "../BasicUsageEnvironment/include" /I "../liveMedia/include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/RtspStream.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\workcode\platform\trunk\RtspClientLib\RtspStream\RtspStream.cpp"
+"F:\workcode\platform\trunk\RtspClientLib\RtspStream\StreamItem.cpp"
+]
+Creating command line "cl.exe @C:\Users\liuxuanbin\AppData\Local\Temp\RSPAD8.tmp" 
+Creating temporary file "C:\Users\liuxuanbin\AppData\Local\Temp\RSPAD9.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "include" /I "../groupsock/include" /I "../UsageEnvironment/include" /I "../BasicUsageEnvironment/include" /I "../liveMedia/include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/RtspStream.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\workcode\platform\trunk\RtspClientLib\RtspStream\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\liuxuanbin\AppData\Local\Temp\RSPAD9.tmp" 
+Creating temporary file "C:\Users\liuxuanbin\AppData\Local\Temp\RSPADA.tmp" with contents
+[
+groupsock.lib BasicUsageEnvironment.lib UsageEnvironment.lib liveMedia.lib Ws2_32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/RtspStream.pdb" /machine:I386 /nodefaultlib:"msvcrt.lib" /def:".\RtspStream.def" /out:"Release/RtspStream.dll" /implib:"Release/RtspStream.lib" /libpath:"../lib/" 
+.\Release\geth264videosize.obj
+.\Release\RtspStream.obj
+.\Release\StdAfx.obj
+.\Release\StreamItem.obj
+.\Release\RtspStream.res
+]
+Creating command line "link.exe @C:\Users\liuxuanbin\AppData\Local\Temp\RSPADA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+geth264videosize.cpp
+Compiling...
+RtspStream.cpp
+StreamItem.cpp
+Generating Code...
+Linking...
+   Creating library Release/RtspStream.lib and object Release/RtspStream.exp
+LINK : warning LNK4049: locally defined symbol "_atoi" imported
+LINK : warning LNK4049: locally defined symbol "__strnicmp" imported
+Creating temporary file "C:\Users\liuxuanbin\AppData\Local\Temp\RSP1A36.bat" with contents
+[
+@echo off
+copy Release\RtspStream.dll ..\..\output
+]
+Creating command line "C:\Users\liuxuanbin\AppData\Local\Temp\RSP1A36.bat"
+
+已复制         1 个文件。
+
+
+
+<h3>Results</h3>
+RtspStream.dll - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

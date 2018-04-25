@@ -1,0 +1,7 @@
+; RtspStream.def : Declares the module parameters for the DLL.
+
+LIBRARY      "RtspStream"
+DESCRIPTION  'RtspStream Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
